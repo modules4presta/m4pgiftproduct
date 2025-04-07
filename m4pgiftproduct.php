@@ -22,7 +22,7 @@ class M4PGiftProduct extends Module
     {
         $this->name = 'm4pgiftproduct';
         $this->tab = 'checkout';
-        $this->version = '1.0.0';
+        $this->version = '1.1.0';
         $this->author = 'Modules4Presta.io';
         $this->need_instance = 0;
         $this->ps_versions_compliancy = ['min' => '1.7', 'max' => _PS_VERSION_];
@@ -37,6 +37,7 @@ class M4PGiftProduct extends Module
     {
         return parent::install() &&
             $this->registerHook('displayCartExtraProductActions') &&
+            $this->registerHook('displayShoppingCart') &&
             $this->installConfiguration();
     }
 
@@ -72,11 +73,15 @@ class M4PGiftProduct extends Module
         }
 
         $cart = $this->context->cart;
-        $giftProductId = (int)Configuration::get('GIFT_PRODUCT_ID');
-        $threshold = (float)Configuration::get('GIFT_THRESHOLD');
-        $giftPrice = (float)Configuration::get('GIFT_PRICE');
+        $giftProductId = (int) Configuration::get('GIFT_PRODUCT_ID');
+        $threshold = (float) Configuration::get('GIFT_THRESHOLD');
+        $giftPrice = (float) Configuration::get('GIFT_PRICE');
         $expiryDate = Configuration::get('GIFT_EXPIRY_DATE');
         $stockDependent = Configuration::get('GIFT_STOCK_DEPENDENT');
+
+        if (empty($giftProductId) || empty((new Product($giftProductId))->id)) {
+            return;
+        }
 
         if (
             !empty($expiryDate)
@@ -105,6 +110,52 @@ class M4PGiftProduct extends Module
 
             $cart->updateQty(1, $giftProductId, null, false, 'up');
         }
+    }
+
+    private function getProductImages($idProduct)
+    {
+        $images = (new Product($idProduct))->getImages($this->context->language->id);
+
+        if (!empty($images)) {
+            foreach ($images as $image) {
+                if (!empty($image['cover'])) {
+                    $images = (array) $image;
+                    $imageInstance = new Image($image['id_image']);
+                    $imagesUrl = _PS_BASE_URL_ . _THEME_PROD_DIR_ . $imageInstance->getExistingImgPath() . '.jpg';
+
+                    return $imagesUrl;
+                }
+            }
+        }
+
+        $basicDir = _PS_BASE_URL_ . _THEME_PROD_DIR_ . $this->context->language->iso_code . '-default-large_default.jpg';
+        return $basicDir;
+    }
+
+    public function hookDisplayShoppingCart()
+    {
+        if (!Configuration::get('GIFT_ACTIVE')) {
+            return;
+        }
+
+        $idProduct = (int) Configuration::get('GIFT_PRODUCT_ID');
+        $product = new Product($idProduct);
+        if (empty($product->id)) {
+            return;
+        }
+
+        $threshold = (float) Configuration::get('GIFT_THRESHOLD');
+        $price = (float) Configuration::get('GIFT_PRICE');
+
+        $this->context->smarty->assign([
+            'threshold' => Tools::displayPrice($threshold),
+            'image' => $this->getProductImages($idProduct),
+            'name' => Product::getProductName($idProduct),
+            'price' => Tools::displayPrice($price),
+            'url' => $product->getLink(),
+        ]);
+
+        return $this->context->smarty->fetch('module:' . $this->name . '/views/templates/hook/displayShoppingCart.tpl');
     }
 
     private function renderForm()

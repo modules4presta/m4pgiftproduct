@@ -15,3 +15,4 @@ $_MODULE['<{m4pgiftproduct}prestashop>m4pgiftproduct_5abc7a3ac0ae1545cc801303727
 $_MODULE['<{m4pgiftproduct}prestashop>m4pgiftproduct_742662dbba8c7a4c4e3f702b2a78896a'] = 'Zależne od ilości prezentu';
 $_MODULE['<{m4pgiftproduct}prestashop>m4pgiftproduct_c9cc8cce247e49bae79f15173ce97354'] = 'Zapisz';
 $_MODULE['<{m4pgiftproduct}prestashop>m4pgiftproduct_b4a34d3f58b039e7685c2e39b5413757'] = 'Pomyślna aktualizacja.';
+$_MODULE['<{m4pgiftproduct}prestashop>displayshoppingcart_e86e4bac22ff3646cecf76457b5aed1b'] = 'Zgarnij prezent przy zakupie za minimum';
