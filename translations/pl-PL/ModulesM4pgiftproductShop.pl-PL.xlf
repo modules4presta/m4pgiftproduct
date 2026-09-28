@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="module" source-language="en-US" target-language="pl-PL" datatype="plaintext">
+    <body>
+      <trans-unit id="0d9175fe89fb80d815e7d03698b6e83a">
+        <source>Gift</source>
+        <target>Prezent</target>
+      </trans-unit>
+      <trans-unit id="dcae8b94daa8ca9444717863b6bf9d62">
+        <source>Your gift is in the cart</source>
+        <target>Prezent jest w koszyku</target>
+      </trans-unit>
+      <trans-unit id="c9a18f47f9aa0559f0ea6ad778f76ea8">
+        <source>Add %amount% more to your order and the gift is yours</source>
+        <target>Dodaj jeszcze %amount%, a prezent jest Twój</target>
+      </trans-unit>
+      <trans-unit id="5c9c89ae55bb25f076e442cb8c781357">
+        <source>Your order qualifies for a gift</source>
+        <target>Twoje zamówienie uprawnia do prezentu</target>
+      </trans-unit>
+      <trans-unit id="17256ccd1222d59e205cc2678c70ae90">
+        <source>Yours for free</source>
+        <target>Dla Ciebie za darmo</target>
+      </trans-unit>
+      <trans-unit id="3c7fe7b16de7a6a73628f55a7ad35914">
+        <source>Yours for %price%</source>
+        <target>Dla Ciebie za %price%</target>
+      </trans-unit>
+      <trans-unit id="bf708aaf9f4c60a3936c099b9c56534d">
+        <source>Add the gift to my cart</source>
+        <target>Dodaj prezent do koszyka</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
