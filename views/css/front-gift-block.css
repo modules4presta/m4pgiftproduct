@@ -1,0 +1,12 @@
+/**
+ * m4pgiftproduct
+ *
+ * @author    Modules4Presta <contact@modules4presta.io>
+ * @copyright 2026 Nice Code sp. z o.o. (Modules4Presta)
+ * @license   https://opensource.org/licenses/MIT MIT License
+ */
+.m4pgiftproduct-block { margin: 1rem 0; padding: 1rem; }
+
+.m4pgiftproduct-block .m4pgiftproduct-product { max-width: 260px; }
+
+.m4pgiftproduct-block .m4pgiftproduct-price { font-weight: 600; margin: .5rem 0; }

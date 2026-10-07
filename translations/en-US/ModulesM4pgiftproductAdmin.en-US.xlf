@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+  <file original="module" source-language="en-US" target-language="en-US" datatype="plaintext">
+    <body>
+      <trans-unit id="d27f1719ec8cfec6941382850de64199">
+        <source>Gift on price threshold</source>
+        <target>Gift on price threshold</target>
+      </trans-unit>
+      <trans-unit id="e76defe24ee65b221c2e20d6423007ae">
+        <source>Adds a gift product to the cart once the order passes an amount you set.</source>
+        <target>Adds a gift product to the cart once the order passes an amount you set.</target>
+      </trans-unit>
+      <trans-unit id="f38f5974cdc23279ffe6d203641a8bdf">
+        <source>Settings updated.</source>
+        <target>Settings updated.</target>
+      </trans-unit>
+      <trans-unit id="9529cc9147caf098a444e713e1770e66">
+        <source>There is no product with this ID.</source>
+        <target>There is no product with this ID.</target>
+      </trans-unit>
+      <trans-unit id="4c102e14e5c62f6d5a46d48986dba5ca">
+        <source>The expiry date is not a valid date.</source>
+        <target>The expiry date is not a valid date.</target>
+      </trans-unit>
+      <trans-unit id="93cba07454f06a4a960172bbd6e2a435">
+        <source>Yes</source>
+        <target>Yes</target>
+      </trans-unit>
+      <trans-unit id="bafd7322c6e97d25b6299b5d6fe8920b">
+        <source>No</source>
+        <target>No</target>
+      </trans-unit>
+      <trans-unit id="06ef8f6fb410d5ec97701d6ee90fc3fd">
+        <source>Gift product settings</source>
+        <target>Gift product settings</target>
+      </trans-unit>
+      <trans-unit id="00d23a76e43b46dae9ec7aa9dcbebb32">
+        <source>Enabled</source>
+        <target>Enabled</target>
+      </trans-unit>
+      <trans-unit id="66746dca3e1bee8182e01dfc9ce82c99">
+        <source>Gift product</source>
+        <target>Gift product</target>
+      </trans-unit>
+      <trans-unit id="01c37b07ddf64d5d3633ddd913b651ad">
+        <source>Order total that unlocks the gift</source>
+        <target>Order total that unlocks the gift</target>
+      </trans-unit>
+      <trans-unit id="1301887a887b076b120e3b1cde53f217">
+        <source>Tax included, shipping excluded, without the gift itself.</source>
+        <target>Tax included, shipping excluded, without the gift itself.</target>
+      </trans-unit>
+      <trans-unit id="22523c12cdfec69c113e844b596079f5">
+        <source>Gift price</source>
+        <target>Gift price</target>
+      </trans-unit>
+      <trans-unit id="af780142cd75801fb2e6d09d67ccd9d5">
+        <source>Tax excluded. Leave 0 to give the product away.</source>
+        <target>Tax excluded. Leave 0 to give the product away.</target>
+      </trans-unit>
+      <trans-unit id="c1f91ed1e1e3d6f26971f5fbc6c14c2e">
+        <source>Runs until</source>
+        <target>Runs until</target>
+      </trans-unit>
+      <trans-unit id="fe55a1e56ae01b8591f0a2465c1292ce">
+        <source>Leave empty to run with no end date.</source>
+        <target>Leave empty to run with no end date.</target>
+      </trans-unit>
+      <trans-unit id="8dd346ed19b4ef373afb06a7513ca9ad">
+        <source>Only while in stock</source>
+        <target>Only while in stock</target>
+      </trans-unit>
+      <trans-unit id="c9cc8cce247e49bae79f15173ce97354">
+        <source>Save</source>
+        <target>Save</target>
+      </trans-unit>
+      <trans-unit id="93cfbac88676702c1a4cea36377c9bfe">
+        <source>No product chosen yet.</source>
+        <target>No product chosen yet.</target>
+      </trans-unit>
+      <trans-unit id="b4be93136a337fcef40c9eb87004c9d0">
+        <source>No product has been found.</source>
+        <target>No product has been found.</target>
+      </trans-unit>
+      <trans-unit id="dcd715cd907e77e486848f43f518fb63">
+        <source>Type a name or a reference</source>
+        <target>Type a name or a reference</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

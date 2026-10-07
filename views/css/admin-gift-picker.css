@@ -1,0 +1,48 @@
+/**
+ * m4pgiftproduct
+ *
+ * @author    Modules4Presta <contact@modules4presta.io>
+ * @copyright 2026 Nice Code sp. z o.o. (Modules4Presta)
+ * @license   https://opensource.org/licenses/MIT MIT License
+ */
+.m4pgiftproduct-picker { position: relative; }
+
+.m4pgiftproduct-picker .m4pgiftproduct-results {
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    margin: 2px 0 0;
+    padding: 0;
+    max-height: 260px;
+    overflow-y: auto;
+    list-style: none;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .15);
+}
+
+.m4pgiftproduct-picker .m4pgiftproduct-results li button {
+    display: block;
+    width: 100%;
+    padding: 7px 12px;
+    border: 0;
+    background: none;
+    text-align: left;
+}
+
+.m4pgiftproduct-picker .m4pgiftproduct-results li button:hover,
+.m4pgiftproduct-picker .m4pgiftproduct-results li button:focus {
+    background: #f6f6f6;
+}
+
+.m4pgiftproduct-picker .m4pgiftproduct-empty {
+    padding: 7px 12px;
+    color: #777;
+}
+
+.m4pgiftproduct-picker .m4pgiftproduct-chosen {
+    margin-top: 6px;
+    font-weight: 600;
+}
